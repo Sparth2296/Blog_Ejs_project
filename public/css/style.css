@@ -1,0 +1,51 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.btn {
+  background: #27ae60;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn.delete {
+  background: #e74c3c;
+}
+
+.blog-card {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.blog-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}

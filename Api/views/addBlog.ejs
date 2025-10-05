@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add Blog</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <div class="container">
+    <h2>📝 Add New Blog</h2>
+    <form action="/blog/add" method="POST" enctype="multipart/form-data">
+      <input type="text" name="title" placeholder="Blog Title" required><br>
+      <textarea name="content" rows="6" placeholder="Write your blog..." required></textarea><br>
+      <input type="text" name="author" placeholder="Author Name" required><br>
+      <input type="file" name="image" accept="image/*"><br>
+      <button type="submit">Add Blog</button>
+    </form>
+  </div>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

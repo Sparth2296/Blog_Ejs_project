@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= blog.title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <div class="container">
+    <div class="blog-detail">
+      <h1><%= blog.title %></h1>
+      <% if (blog.image) { %>
+        <img src="<%= blog.image %>" alt="Blog Image" class="blog-image">
+      <% } %>
+      <p><%= blog.content %></p>
+      <p class="author">✍️ Written by <%= blog.author %></p>
+
+      <a href="/blog/edit/<%= blog._id %>" class="btn">Edit</a>
+      <a href="/" class="btn">Back to Home</a>
+    </div>
+  </div>
+
+  <%- include('partials/footer') %>
+</body>
+</html>
